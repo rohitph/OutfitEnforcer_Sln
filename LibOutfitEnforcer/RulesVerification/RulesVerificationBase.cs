@@ -40,16 +40,28 @@ namespace LibOutfitEnforcer.RulesVerification
 
         }
 
+        protected bool IsClothingItemWornBefore(Commands p_RequiredClothingItem, AppCommandArgument p_arg)
+        {
+            bool bTempIsValid = false;
+            for (int i = 0; i < p_arg.ArgSeqNo; i++)
+            {
+                if (m_AppArgs.Value(i) == (int)p_RequiredClothingItem)
+                {
+                    bTempIsValid = true;
+                    break;
+                }
+            }
+            return bTempIsValid;
+        }
         #region Private Methods
         //Common
-        //•	Pajamas must be taken off before anything else can be put on
-        //•	Only 1 piece of each type of clothing may be put on
-        //•	Pants must be put on before shoes
-        //•	The shirt must be put on before the headwear or jacket
-        //•	You cannot leave the house until all items of clothing are on 
+        //â€¢	Pajamas must be taken off before anything else can be put on
+        //â€¢	Only 1 piece of each type of clothing may be put on
+        //â€¢	Pants must be put on before shoes
+        //â€¢	The shirt must be put on before the headwear or jacket
+        //â€¢	You cannot leave the house until all items of clothing are on 
         private bool VerifyCommonRules(AppCommandArgument p_arg)
         {
-            bool bTempIsValid;
             //Make sure pajamas are taken off before anything else can be put on
             if (p_arg.ArgSeqNo == 0 && p_arg.ArgValue != (int)Commands.TakeOffPajamas) return false;
 
@@ -59,48 +71,28 @@ namespace LibOutfitEnforcer.RulesVerification
                 if (p_arg.ArgValue == m_AppArgs.Value(i)) return false;
             }
 
-            //Pants must be put on before shoes
-            if (p_arg.ArgValue == (int)Commands.PutOnFootwear) //1 = Shoes ; 6 = pants
+            switch (p_arg.ArgValue)
             {
-                bTempIsValid = false;
-                for (int i = 0; i < p_arg.ArgSeqNo; i++)
-                {
-                    //If Pants are worn
-                    if (m_AppArgs.Value(i) == (int)Commands.PutOnPants)
-                    {
-                        bTempIsValid = true;
-                        break;
-                    }
-                }
-                if (!bTempIsValid) return false;
-            }
+                case (int)Commands.PutOnFootwear:
+                    //Pants must be put on before shoes
+                    return this.IsClothingItemWornBefore(Commands.PutOnPants, p_arg);
 
-            //The shirt must be put on before the headwear
-            if (p_arg.ArgValue == (int)Commands.PutOnHeadwear) //2 = headwear ; 4 = Shirt
-            {
-                bTempIsValid = false;
-                for (int i = 0; i < p_arg.ArgSeqNo; i++)
-                {
-                    //If Shirt is worn
-                    if (m_AppArgs.Value(i) == (int)Commands.PutOnShirt)
-                    {
-                        bTempIsValid = true;
-                        break;
-                    }
-                }
-                if (!bTempIsValid) return false;
-            }
+                case (int)Commands.PutOnHeadwear:
+                    //The shirt must be put on before the headwear 
+                    return this.IsClothingItemWornBefore(Commands.PutOnShirt, p_arg);
 
-            //You cannot leave the house until all items of clothing are on
-            if (p_arg.ArgValue == (int)Commands.LeaveHouse)
-            {
-                int iTotalItemsBeforeLeaving = ClothingItemsRequired.Count + 1; //1 step of removing Pj's
-                if (p_arg.ArgSeqNo < iTotalItemsBeforeLeaving) return false;
+                case (int)Commands.LeaveHouse:
+                    //You cannot leave the house until all items of clothing are on 
 
+                    int iTotalItemsBeforeLeaving = ClothingItemsRequired.Count + 1; //1 step of removing Pj's
+                    return (p_arg.ArgSeqNo < iTotalItemsBeforeLeaving) ? false : true;
+
+                default:
+                    return true;
             }
-            return true;
 
         }
         #endregion
+
     }
 }
