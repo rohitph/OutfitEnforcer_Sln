@@ -42,13 +42,13 @@ namespace LibOutfitEnforcer
 
                 foreach (AppCommandArgument arg in m_AppArgs)
                 {
-                    sTempResult = "fail";
+                    sTempResult = objResponse.FAILURE_RESPONSE;
 
                     if (objRulesVerify.Verify(arg)) sTempResult = objResponse.OutputResponse(arg);
 
                     sbOutputString.Append(sTempResult + ", ");
 
-                    if (sTempResult == "fail") break;
+                    if (sTempResult == objResponse.FAILURE_RESPONSE) break;
 
                 }
 
