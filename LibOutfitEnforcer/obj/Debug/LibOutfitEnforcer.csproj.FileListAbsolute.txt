@@ -1,0 +1,5 @@
+D:\Net4.5TestProjects\OutfitEnforcer_Sln\LibOutfitEnforcer\bin\Debug\LibOutfitEnforcer.dll
+D:\Net4.5TestProjects\OutfitEnforcer_Sln\LibOutfitEnforcer\bin\Debug\LibOutfitEnforcer.pdb
+D:\Net4.5TestProjects\OutfitEnforcer_Sln\LibOutfitEnforcer\obj\Debug\LibOutfitEnforcer.dll
+D:\Net4.5TestProjects\OutfitEnforcer_Sln\LibOutfitEnforcer\obj\Debug\LibOutfitEnforcer.pdb
+D:\Net4.5TestProjects\OutfitEnforcer_Sln\LibOutfitEnforcer\obj\Debug\LibOutfitEnforcer.csprojResolveAssemblyReference.cache
