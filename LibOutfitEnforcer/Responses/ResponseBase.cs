@@ -6,6 +6,7 @@ namespace LibOutfitEnforcer.Responses
 {
     public abstract class ResponseBase
     {
+        private string m_sFailureResponse = "fail";
         protected List<CommandResponse> CmdResponses = new List<CommandResponse>();
 
         #region Base constructor
@@ -22,6 +23,14 @@ namespace LibOutfitEnforcer.Responses
 
         #endregion
 
+        public string FAILURE_RESPONSE
+        {
+            get
+            {
+                return m_sFailureResponse;
+            }
+        }
+        
         public string OutputResponse(AppCommandArgument p_arg)
         {
 
