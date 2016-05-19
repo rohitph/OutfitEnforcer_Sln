@@ -23,33 +23,18 @@ namespace LibOutfitEnforcer.RulesVerification
 
         protected override bool VerifySpecificRules(AppCommandArgument p_arg)
         {
-            bool bTempIsValid;
-            //Socks must be put on before shoes
-            if (p_arg.ArgValue == (int)Commands.PutOnFootwear)
+            switch (p_arg.ArgValue)
             {
-                for (int i = 0; i < p_arg.ArgSeqNo; i++)
-                {
-                    if (p_arg.ArgValue == AppArgs.Value(i)) return false;
-                }
-            }
+                case (int)Commands.PutOnFootwear:
+                    return base.IsClothingItemWornBefore(Commands.PutOnSocks, p_arg);
 
-            //The shirt must be put on before the jacket
-            if (p_arg.ArgValue == (int)Commands.PutOnJacket)
-            {
-                bTempIsValid = false;
-                for (int i = 0; i < p_arg.ArgSeqNo; i++)
-                {
-                    //If Shirt is worn
-                    if (AppArgs.Value(i) == (int)Commands.PutOnShirt)
-                    {
-                        bTempIsValid = true;
-                        break;
-                    }
-                }
-                if (!bTempIsValid) return false;
-            }
+                case (int)Commands.PutOnJacket:
+                    return base.IsClothingItemWornBefore(Commands.PutOnShirt, p_arg);
 
-            return true;
+                default:
+                    return true;
+            }
+            
         }
     }
 }
