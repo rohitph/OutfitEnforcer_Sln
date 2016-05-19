@@ -22,10 +22,7 @@ namespace LibOutfitEnforcer.RulesVerification
 
         protected override bool VerifySpecificRules(AppCommandArgument p_arg)
         {
-            if (p_arg.ArgValue == (int)Commands.PutOnSocks) return false;
-
-            if (p_arg.ArgValue == (int)Commands.PutOnJacket) return false;
-
+            if (p_arg.ArgValue == (int)Commands.PutOnSocks | p_arg.ArgValue == (int)Commands.PutOnJacket) return false;
             return true;
         }
     }
