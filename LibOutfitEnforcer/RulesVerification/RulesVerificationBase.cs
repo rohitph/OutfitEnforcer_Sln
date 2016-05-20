@@ -67,9 +67,7 @@ namespace LibOutfitEnforcer.RulesVerification
 
             //Only 1 piece of each type of clothing may be put on
             for (int i = 0; i < p_arg.ArgSeqNo; i++)
-            {
                 if (p_arg.ArgValue == m_AppArgs.Value(i)) return false;
-            }
 
             switch (p_arg.ArgValue)
             {
