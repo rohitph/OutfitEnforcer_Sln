@@ -73,9 +73,8 @@ namespace LibOutfitEnforcer
         public int Value(int p_SeqNo)
         {
             foreach (AppCommandArgument objArg in m_listArguments)
-            {
                 if (objArg.ArgSeqNo == p_SeqNo) return objArg.ArgValue;
-            }
+
             return -1;
         }
 
@@ -94,10 +93,9 @@ namespace LibOutfitEnforcer
             for (int i = 0; i < cArgs.Length; i++)
             {
                 if ((! char.IsNumber(cArgs[i])) & (! cArgs[i].Equals(' ')))
-                {
                     sTempType.Append(cArgs[i]);
-                }
-                else break;
+                else 
+                    break;
             }
             m_TempType = sTempType.ToString().Trim().ToUpper();
 
@@ -110,10 +108,8 @@ namespace LibOutfitEnforcer
             StringBuilder sb = new StringBuilder("");
             Array Vals = Enum.GetValues(typeof(Commands));
             foreach (Commands cmd in Vals)
-            {
                 sb.Append((int)cmd + ",");
 
-            }
             sb.Remove(sb.Length - 1, 1);
             return sb.ToString();
         }
