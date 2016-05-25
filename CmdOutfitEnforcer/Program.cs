@@ -16,8 +16,8 @@ namespace CmdOutfitEnforcer
             {
                 Console.Write("\nInput: ");
                 sInput = sInput = Console.ReadLine();
-                ExecuteProgram obj = new ExecuteProgram();
-                string sOutput = obj.Execute(sInput,new ExecuteProgram.ProcessException((new Logger()).LogExceptions));
+                IExecute obj = new ExecuteProgram();
+                string sOutput = obj.Execute(sInput,new ProcessException((new Logger()).LogExceptions));
 
                 if (sOutput.Length > 0) Console.WriteLine("Output: " + sOutput);
             }

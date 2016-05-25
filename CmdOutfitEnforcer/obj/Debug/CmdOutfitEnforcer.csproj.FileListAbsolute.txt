@@ -6,3 +6,11 @@ D:\Net4.5TestProjects\OutfitEnforcer_Sln\CmdOutfitEnforcer\bin\Debug\LibOutfitEn
 D:\Net4.5TestProjects\OutfitEnforcer_Sln\CmdOutfitEnforcer\obj\Debug\CmdOutfitEnforcer.csprojResolveAssemblyReference.cache
 D:\Net4.5TestProjects\OutfitEnforcer_Sln\CmdOutfitEnforcer\obj\Debug\CmdOutfitEnforcer.exe
 D:\Net4.5TestProjects\OutfitEnforcer_Sln\CmdOutfitEnforcer\obj\Debug\CmdOutfitEnforcer.pdb
+C:\Rohit\GitHub_Projs\OutfitEnforcer_Sln\CmdOutfitEnforcer\bin\Debug\CmdOutfitEnforcer.exe.config
+C:\Rohit\GitHub_Projs\OutfitEnforcer_Sln\CmdOutfitEnforcer\obj\Debug\CmdOutfitEnforcer.exe
+C:\Rohit\GitHub_Projs\OutfitEnforcer_Sln\CmdOutfitEnforcer\obj\Debug\CmdOutfitEnforcer.pdb
+C:\Rohit\GitHub_Projs\OutfitEnforcer_Sln\CmdOutfitEnforcer\obj\Debug\CmdOutfitEnforcer.csprojResolveAssemblyReference.cache
+C:\Rohit\GitHub_Projs\OutfitEnforcer_Sln\CmdOutfitEnforcer\bin\Debug\CmdOutfitEnforcer.exe
+C:\Rohit\GitHub_Projs\OutfitEnforcer_Sln\CmdOutfitEnforcer\bin\Debug\CmdOutfitEnforcer.pdb
+C:\Rohit\GitHub_Projs\OutfitEnforcer_Sln\CmdOutfitEnforcer\bin\Debug\LibOutfitEnforcer.dll
+C:\Rohit\GitHub_Projs\OutfitEnforcer_Sln\CmdOutfitEnforcer\bin\Debug\LibOutfitEnforcer.pdb

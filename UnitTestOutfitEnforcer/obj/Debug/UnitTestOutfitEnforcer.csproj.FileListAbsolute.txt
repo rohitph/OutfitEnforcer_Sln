@@ -5,3 +5,11 @@ D:\Net4.5TestProjects\OutfitEnforcer_Sln\UnitTestOutfitEnforcer\bin\Debug\LibOut
 D:\Net4.5TestProjects\OutfitEnforcer_Sln\UnitTestOutfitEnforcer\bin\Debug\LibOutfitEnforcer.pdb
 D:\Net4.5TestProjects\OutfitEnforcer_Sln\UnitTestOutfitEnforcer\obj\Debug\UnitTestOutfitEnforcer.dll
 D:\Net4.5TestProjects\OutfitEnforcer_Sln\UnitTestOutfitEnforcer\obj\Debug\UnitTestOutfitEnforcer.pdb
+C:\Rohit\GitHub_Projs\OutfitEnforcer_Sln\UnitTestOutfitEnforcer\obj\Debug\UnitTestOutfitEnforcer.csprojResolveAssemblyReference.cache
+C:\Rohit\GitHub_Projs\OutfitEnforcer_Sln\UnitTestOutfitEnforcer\obj\Debug\UnitTestOutfitEnforcer.dll
+C:\Rohit\GitHub_Projs\OutfitEnforcer_Sln\UnitTestOutfitEnforcer\obj\Debug\UnitTestOutfitEnforcer.pdb
+C:\Rohit\GitHub_Projs\OutfitEnforcer_Sln\UnitTestOutfitEnforcer\bin\Debug\UnitTestOutfitEnforcer.dll
+C:\Rohit\GitHub_Projs\OutfitEnforcer_Sln\UnitTestOutfitEnforcer\bin\Debug\UnitTestOutfitEnforcer.pdb
+C:\Rohit\GitHub_Projs\OutfitEnforcer_Sln\UnitTestOutfitEnforcer\bin\Debug\LibOutfitEnforcer.dll
+C:\Rohit\GitHub_Projs\OutfitEnforcer_Sln\UnitTestOutfitEnforcer\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Rohit\GitHub_Projs\OutfitEnforcer_Sln\UnitTestOutfitEnforcer\bin\Debug\LibOutfitEnforcer.pdb

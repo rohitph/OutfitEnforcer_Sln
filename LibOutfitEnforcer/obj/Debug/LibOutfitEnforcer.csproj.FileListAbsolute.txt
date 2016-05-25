@@ -3,3 +3,8 @@ D:\Net4.5TestProjects\OutfitEnforcer_Sln\LibOutfitEnforcer\bin\Debug\LibOutfitEn
 D:\Net4.5TestProjects\OutfitEnforcer_Sln\LibOutfitEnforcer\obj\Debug\LibOutfitEnforcer.dll
 D:\Net4.5TestProjects\OutfitEnforcer_Sln\LibOutfitEnforcer\obj\Debug\LibOutfitEnforcer.pdb
 D:\Net4.5TestProjects\OutfitEnforcer_Sln\LibOutfitEnforcer\obj\Debug\LibOutfitEnforcer.csprojResolveAssemblyReference.cache
+C:\Rohit\GitHub_Projs\OutfitEnforcer_Sln\LibOutfitEnforcer\bin\Debug\LibOutfitEnforcer.dll
+C:\Rohit\GitHub_Projs\OutfitEnforcer_Sln\LibOutfitEnforcer\bin\Debug\LibOutfitEnforcer.pdb
+C:\Rohit\GitHub_Projs\OutfitEnforcer_Sln\LibOutfitEnforcer\obj\Debug\LibOutfitEnforcer.csprojResolveAssemblyReference.cache
+C:\Rohit\GitHub_Projs\OutfitEnforcer_Sln\LibOutfitEnforcer\obj\Debug\LibOutfitEnforcer.dll
+C:\Rohit\GitHub_Projs\OutfitEnforcer_Sln\LibOutfitEnforcer\obj\Debug\LibOutfitEnforcer.pdb

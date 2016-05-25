@@ -4,16 +4,15 @@ using System.Text;
 
 namespace LibOutfitEnforcer
 {
-    public class ExecuteProgram
+    public class ExecuteProgram : IExecute
     {
-
-        public delegate void ProcessException(Exception ex);
 
         public ExecuteProgram()
         {
+
         }
 
-        public string Execute(string p_sCommandParams, ProcessException p_exProcessException)
+        string IExecute.Execute(string p_sCommandParams, ProcessException p_exProcessException)
         {
             AppArguments m_AppArgs;
         

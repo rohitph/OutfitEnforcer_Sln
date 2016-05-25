@@ -6,7 +6,7 @@ namespace UnitTestOutfitEnforcer
     [TestClass]
     public class UnitTest1
     {
-        private ExecuteProgram obj = new ExecuteProgram();
+        private IExecute obj = new ExecuteProgram();
         private TestLogger objLogger = new TestLogger();
         [TestMethod]
         public void TestMethod1()
